@@ -36,14 +36,14 @@ jobs:
         with:
           path: ./output
 
-deploy:
-  needs: build-deploy
-  runs-on: ubuntu-latest
-  environment:
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
+  deploy:
+    needs: build-deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
-  steps:
-    - name: deploy to github pages
-      id: deployment
-      uses: actions/deploy-pages@v2
+    steps:
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v2
