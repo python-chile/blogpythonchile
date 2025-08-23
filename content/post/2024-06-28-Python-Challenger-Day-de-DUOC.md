@@ -27,11 +27,11 @@ El Python Challenger Day no solo fue una competencia, sino también una oportuni
 
 Aquí te dejamos algunas fotos que capturan la esencia de este increíble evento:
 
-<img src="../img/pythonchallengerday/pythonchallengerday1.webp" width="480" height="380" />
+<img src="{static}/img/pythonchallengerday/pythonchallengerday1.webp" width="480" height="380" />
 
-<img src="../img/pythonchallengerday/pythonchallengerday2.webp" width="480" height="380" />
+<img src="{static}/img/pythonchallengerday/pythonchallengerday2.webp" width="480" height="380" />
 
-<img src="../img/pythonchallengerday/pythonchallengerday3.webp" width="480" height="380" />
+<img src="{static}/img/pythonchallengerday/pythonchallengerday3.webp" width="480" height="380" />
 
 ## 🙌 ¡Gracias a Todos!
 

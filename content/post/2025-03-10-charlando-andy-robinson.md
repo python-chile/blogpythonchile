@@ -11,7 +11,7 @@ A principios de enero, en Python Chile, recibimos un correo en inglés. Andy Rob
 
 Durante la charla, descubrimos que Andy fue uno de los primeros pythonistas en el Reino Unido y autor del libro *Python: Programming on Win32*. En esos días, Python aún era un lenguaje emergente, lejos de la popularidad que alcanzaría más tarde en la industria.  
 
-<center><img src="../img/meetup/book-python-programming-on-win32.jpg" width="40%" height="40%" /></center>
+<center><img src="{static}/img/meetup/book-python-programming-on-win32.jpg" width="40%" height="40%" /></center>
 Python: Programming on Win32 fue una de las primeras obras en abordar el uso de Python en sistemas Windows, un campo entonces poco explorado.  
 
 Hoy, el tiempo de Andy se divide entre su familia, su empresa [ReportLab](https://www.reportlab.com), la plataforma [OpenTrack](https://opentrack.run/), y su pasión por viajar por el mundo. Un verdadero sueño hecho realidad.  
@@ -20,7 +20,7 @@ ReportLab es la empresa detrás de la librería de Python ReportLab, que permite
 
 
 
-<center><img src="../img/meetup/seba-pame-andy.jpg" width="50%" height="50%" /></center>
+<center><img src="{static}/img/meetup/seba-pame-andy.jpg" width="50%" height="50%" /></center>
 
 
 Lo más fascinante de nuestra conversación fue reflexionar sobre cómo, a pesar del tremendo crecimiento que ha tenido Python, muchos de los desafíos siguen siendo los mismos. Al final, el verdadero potencial de un lenguaje, proyecto o empresa radica en la comunidad que lo respalda.  

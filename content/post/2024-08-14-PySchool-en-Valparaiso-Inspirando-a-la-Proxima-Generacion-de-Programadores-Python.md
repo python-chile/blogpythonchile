@@ -39,12 +39,12 @@ La comunidad de Python en Chile sigue creciendo a pasos agigantados. Si te apasi
 No te olvides de seguir a [café-robots-galletas](https://www.instagram.com/caferobotsygalletas/) en Instagram para más novedades.
 
 
-<img src="../img/pyschool/2024/img001.webp" width="480" height="380" />
-<img src="../img/pyschool/2024/img002.webp" width="480" height="380" />
-<img src="../img/pyschool/2024/img003.webp" width="480" height="380" />
-<img src="../img/pyschool/2024/img004.webp" width="480" height="380" />
-<img src="../img/pyschool/2024/img005.webp" width="480" height="380" />
-<img src="../img/pyschool/2024/img006.webp" width="480" height="380" />
+<img src="{static}/img/pyschool/2024/img001.webp" width="480" height="380" />
+<img src="{static}/img/pyschool/2024/img002.webp" width="480" height="380" />
+<img src="{static}/img/pyschool/2024/img003.webp" width="480" height="380" />
+<img src="{static}/img/pyschool/2024/img004.webp" width="480" height="380" />
+<img src="{static}/img/pyschool/2024/img005.webp" width="480" height="380" />
+<img src="{static}/img/pyschool/2024/img006.webp" width="480" height="380" />
 
 
 🌐 [Página oficial de PyDay](https://pyday.cl)

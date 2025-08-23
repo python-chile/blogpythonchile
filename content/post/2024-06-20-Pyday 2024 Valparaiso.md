@@ -56,15 +56,15 @@ No olvides seguirnos en redes sociales y estar atento a futuros eventos. ¡Junto
 
 Aquí te dejamos algunas fotos que capturan la esencia de este increíble evento:
 
-<img src="../img/pyday/2024/valparaiso/img001.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img002.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img003.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img004.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img005.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img006.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img007.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img008.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img009.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img010.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img011.webp" width="480" height="380" />
-<img src="../img/pyday/2024/valparaiso/img012.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img001.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img002.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img003.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img004.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img005.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img006.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img007.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img008.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img009.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img010.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img011.webp" width="480" height="380" />
+<img src="{static}/img/pyday/2024/valparaiso/img012.webp" width="480" height="380" />
