@@ -33,7 +33,7 @@ jobs:
 
       - name: upload pages artifact
         uses: actions/upload-pages-artifact@v2
-        widht:
+        wiht:
           path: ./output
 
 deploy:
