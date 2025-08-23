@@ -37,7 +37,7 @@ jobs:
         run: pelican content -s publishconf.py -o output
 
       - name: upload pages artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./output
 
@@ -51,4 +51,4 @@ jobs:
     steps:
       - name: deploy to github pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
