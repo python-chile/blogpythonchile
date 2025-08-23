@@ -21,7 +21,7 @@ JINJA_GLOBALS = {
     'img_path': '{static}/img'
 }
 
-STATIC_PATHS = ['img']
+STATIC_PATHS = ['img', 'css']
 
 ARTICLE_PATHS = ['post']
 
