@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Home - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+<div class="welcome-msg">
+    <h1 class="welcome-msg-title">¡Hola Pythonista!</h1>
+    <div class="welcome-msg-body">
+        <p>¿Tienes un proyecto personal, una herramienta que descubriste, una librería que te llamó la atención o simplemente algo que quieras compartir? ¡Este es tu espacio!</p>
+        <p>Temas como ciencia de datos, desarrollo web, automatización, videojuegos, inteligencia artificial, seguridad informática o cualquier otro que tenga relación con Python son totalmente bienvenidos 🚀</p>
+    </div>
+</div>
+
+<label class="search-bar-container">
+    <input type="text" id="search-bar" class="search-bar" placeholder="Busca un post ...">
+</label>
+
+<ul class="preview-container">
+        {% for article in articles_page.object_list %}
+            <li class="preview-post">
+                <a class="preview-link" href="{{ SITEURL }}/{{ article.url }}">
+                    <img class="preview-img" src="{{ SITEURL }}/{{ article.image }}" alt="">
+                    <br/>
+                    <div class="preview-title">{{ article.title }}</div>
+                    <div class="preview-summary">{{ article.summary }}</div>
+                    <div class="preview-author">{{ article.date.strftime('%Y-%m-%d') }} Por {{ article.author }}</div>
+                    <div class="preview-tags-container">
+                        {% for tag in article.tags %}
+                            <div class="preview-tag"> {{ tag.name }} </div>
+                        {% endfor %}
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+</ul>
+
+<div class="pagination">
+    {% if articles_page.has_previous() %}
+        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">Previous</a>
+    {% endif %}
+
+    {% if articles_page.has_next() %}
+        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Next</a>
+    {% endif %}
+</div>
+
+
+{% endblock %}

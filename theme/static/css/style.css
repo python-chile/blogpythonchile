@@ -1,0 +1,337 @@
+body, html, root {
+    font-family: monospace !important;
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    background: #F5F0CD !important;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 4px solid #000;
+    background-color: #3674B5;
+}
+
+.left-link {
+    text-decoration: none;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    background-color: #578FCA;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: 4px solid #000;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 0 #000;
+}
+
+.navbar-left:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 0 #000;
+    z-index: 1;
+}
+
+.navbar-logo {
+    display: block;
+    height: 60px;
+    width: auto;
+    margin: 1rem 0.5rem;
+}
+
+.navbar-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+}
+
+.cursor {
+    font-size: 4rem;
+    color: #fefefe;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    overflow: visible;
+}
+
+.navbar-menu a {
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    border: 3px solid #000;
+    background-color: #EF4444;
+}
+
+.navbar-menu a:hover {
+    background-color: #000;
+    color: #f8f1ee;
+}
+
+/* Mensaje de bienvenida */
+
+.welcome-msg {
+    text-align: center;
+    align-items: center;
+    margin: 3rem 15rem;
+}
+
+/* Barra de búsqueda */
+.search-bar-container {
+    display: flex;
+}
+
+.search-bar {
+    height: 2.5rem;
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #000;
+    background: #f8f1ee;
+    margin: 0 35rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Lista prevista de posts */
+
+.preview-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 20px;
+}
+
+.preview-post {
+    text-decoration: none;
+    height: 460px;
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid #000;
+    padding: 5px;
+    background-color: #FADA7A;
+    list-style: none;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 0 #000;
+}
+
+.preview-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 0 #000;
+    z-index: 1;
+}
+
+.preview-link {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Imagen de portada de post */
+.preview-img {
+    width: 100%;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.preview-title {
+    font-weight: bold;
+    margin: 0.5rem auto;
+}
+
+.preview-summary{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 90%;
+    margin: 0.5rem auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.preview-author {
+    font-style: italic;
+    margin: 0.5rem auto;
+    font-size: 90%;
+}
+
+/* Tags del Post */
+.preview-tags-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.preview-tag {
+    background-color: #f8f1ee;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid #000
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.pagination a {
+    background-color: #f8f1ee;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 0 #000;
+}
+
+.pagination a:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 0 #000;
+    z-index: 1;
+}
+
+
+/* footer */
+.footer-container {
+    background-color: #3674B5;
+    padding: 1rem;
+    border-top: 4px solid #000;
+}
+
+/* Contenido del post */
+.content {
+    text-align: justify;
+}
+
+.post {
+    margin: 1rem 10rem;
+    padding: 1rem;
+}
+
+/* imágenes que están en el contenido del post */
+.post-img {
+    margin: 1rem auto !important;
+    display: flex !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+
+/* background para contenedor bloque de código */
+.highlighttable-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.highlight {
+    padding: 1rem 15%;
+    max-width: 100%;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.highlighttable {
+    width: 100%;
+    max-width: 100%;
+    background-color: #8F8F8F;
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.highlight pre {
+    margin: 0;
+    display: inline-block;
+}
+
+/* Líneas del bloque de código */
+.highlighttable td {
+    vertical-align: top;
+}
+
+.linenos {
+    user-select: none;
+    border-right: 3px solid #000;
+    width: 0;
+}
+
+td.linenos .normal {
+    background-color: #8F8F8F !important;
+    color: #000 !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* sección bloque de código*/
+.code {
+    padding-left: 10px;
+}
+
+/* botón para copiar código de un post */
+.copy-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 0.8rem;
+    background: #F5F0CD;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 0 #000;
+}
+
+.copy-btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 0 #000;
+    z-index: 1;
+}
+
+/* videos dentro del cuerpo del post */
+iframe {
+    display: block;
+    margin: 1rem auto ;
+    width: 80% !important;
+    height: 35rem !important;
+}

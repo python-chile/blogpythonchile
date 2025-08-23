@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+              document.querySelectorAll(".highlighttable").forEach((highlighttable) => {
+
+                  // Creación de wrapper para el bloque de código y botón
+                  const highlightTableWrapper = document.createElement('div');
+                  highlightTableWrapper.classList.add('highlighttable-wrapper'); // Add the class
+
+                  // Crea botón para copiar código
+                  const codeBlockCopyPasteButton = document.createElement("button");
+                  codeBlockCopyPasteButton.innerText = "copiar";
+                  codeBlockCopyPasteButton.className = "copy-btn";
+
+                  // Inserta primero wrapper y despues highlighttable
+                  highlighttable.parentNode.insertBefore(highlightTableWrapper, highlighttable);
+                  highlightTableWrapper.appendChild(highlighttable);
+                  highlightTableWrapper.appendChild(codeBlockCopyPasteButton)
+
+                  codeBlockCopyPasteButton.addEventListener("click", () => {
+                      // obtiene el elemento tag code
+                      const codeElem = highlighttable.querySelector("code");
+                      if (!codeElem) return;
+
+                      const code = codeElem.innerText;
+                      navigator.clipboard.writeText(code).then(() => {
+                          codeBlockCopyPasteButton.innerText = "copiado!";
+                          setTimeout(() => (codeBlockCopyPasteButton.innerText = "copiar"), 2000);
+                      });
+                  });
+              });
+        });
+    </script>
+
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+</body>
+</html>
