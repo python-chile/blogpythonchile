@@ -24,6 +24,11 @@ Por favor sigue los siguientes puntos para contribuir con un nuevo post o para m
 
 Dentro del proyecto, en el lado derecho a la altura del nombre de este, clickear **Fork** que debe estar entre los elementos **Watch** y **Star**.
 
+>[!NOTE]
+> Considera tener siempre actualizado tu fork respecto al proyecto original.
+> Evita conflictos en el desarrollo por no sincronizar tu repo.
+
+
 2. Clonar proyecto
 
 Por ejemplo:
@@ -123,7 +128,7 @@ Para mostrar código seguir el siguiente formato:
       print("Hello world!")
     ```
     
-    text ...
+    texto ...
 ```
 
 El bloque de código debe situarse en la **columna 0**, es decir, no se le debe aplicar ni un tab.
