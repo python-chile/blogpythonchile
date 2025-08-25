@@ -3,7 +3,7 @@ date: 2023-03-30
 title: ¡Acompáñanos a conmemorar el día de la mujer!
 summary: colaboración de pyladies y pythonchile.
 author: Python Chile
-image: img/otros/default.jpg
+image: img/otros/default.webp
 tags: pyladies, conferencia, conferencia
 ---
 

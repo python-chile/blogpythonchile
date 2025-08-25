@@ -3,7 +3,7 @@ date: 2018-02-06
 title: PIP el administrador de paquetes de Python
 summary: Guía rápida de uso
 author: Pablo Lira
-image: img/otros/default.jpg
+image: img/otros/default.webp
 tags: pip, python, tutorial
 ---
 

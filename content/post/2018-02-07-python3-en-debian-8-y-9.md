@@ -3,7 +3,7 @@ date: 2018-02-07
 title: Compilación e instalación de Python3 en Debian 8 y 9
 summary: desde un sistema base
 author: Pablo Lira
-image: img/otros/default.jpg
+image: img/otros/default.webp
 tags: python, debian, tutorial
 ---
 

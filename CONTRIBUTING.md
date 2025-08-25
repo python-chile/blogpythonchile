@@ -67,13 +67,16 @@ publishconf.py      # Configuración para ambiente de producción
 
 # 3. 📝 Crear un Post
 
-1. Crea un nuevo archivo **Markdown** en `content/post`
+1. Crea un nuevo archivo **Markdown** en `content/post` con el formato `AAAA-MM-DD-titulo-mi-post.md`
 
 Ejemplo:
 
 ```bash
-content/post/mi-post.md
+content/post/2025-08-25-hello-world.md
 ```
+
+>[!WARNING]
+> Favor de respetar formato fecha
 
 2. Agrega la metadata al principio del archivo
 
@@ -85,7 +88,7 @@ date: 2025-08-22
 title: Titulo Post
 summary: Resumen de Post
 author: Nombre
-image: img/otros/default.jpg
+image: img/otros/default.webp
 tags: python, pelican, tutorial
 ---
 
@@ -97,7 +100,7 @@ Contenido del post comienza aquí...
 
 Descripción de metada:
 
-- **date**: fecha de la creación del post. Formato AAAA-MM-DD.
+- **date**: fecha de la creación del post. La misma ocupada en el nombre del archivo con formato AAAA-MM-DD.
 - **title**: Título del post.
 - **summary**: Breve resumen del post.
 - **author**: Nombre de quién creó el post.
@@ -142,12 +145,13 @@ El lenguaje que se utiliza en el bóque de código se debe definir al principio 
 
 Debe ser tipo **webpg** toda imagen ocupada en el contenido.
 
-Para poder mostrar cualquier imagen ocupar el siguiente formato:
+No hay un estandar actualmente de cómo integrar imágenes en un post, se puede agregar el estilo y 
+dimensiones que se quiera. Queda a gusto personal este punto.
+
+Ejemplo de imagen en un post:
 
 ```bash
-
-![texto alternativo]({static}/path/de/imagen/nombre-imagen.webp)
-
+<img src="{static}/img/pyday/2025/copiapo/img1.webp" width="480" height="380" />
 ```
 
 Toda imagen que se ocupe en el post debe estar guarda en la ruta `content/img/<sub-carpeta>/<año>`. Si `<sub-carpeta>` y/o `<año>` no existe, se puede 

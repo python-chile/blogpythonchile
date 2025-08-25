@@ -71,7 +71,6 @@ body, html, root {
     gap: 2rem;
     font-weight: 900;
     text-transform: uppercase;
-    margin-right: 1rem;
     overflow: visible;
 }
 
@@ -100,6 +99,7 @@ body, html, root {
 
 /* Barra de búsqueda */
 .search-bar-container {
+    margin: 0 30%;
     display: flex;
 }
 
@@ -110,7 +110,7 @@ body, html, root {
     border-radius: 15px;
     border: 3px solid #000;
     background: #f8f1ee;
-    margin: 0 35rem;
+    margin: 0 auto;
     box-sizing: border-box;
     outline: none;
 }
@@ -334,4 +334,31 @@ iframe {
     margin: 1rem auto ;
     width: 80% !important;
     height: 35rem !important;
+}
+
+
+@media (max-width: 1300px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        margin: 1rem auto;
+        padding: 0;
+    }
+
+    .navbar-menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .preview-tags-container {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .welcome-msg-body {
+        font-size: 0;
+    }
 }

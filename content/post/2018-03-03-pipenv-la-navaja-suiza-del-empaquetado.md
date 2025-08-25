@@ -3,7 +3,7 @@ date: 2018-03-03
 title: Pipenv La Navaja Suiza Del Empaquetado
 summary: Flujo De Trabajo
 author: Pablo Lira
-image: img/otros/default.jpg
+image: img/otros/default.webp
 tags: pip, virtualenv, pyenv, env, tutorial
 ---
 

@@ -3,7 +3,7 @@ date: 2025-08-22
 title: Post test
 summary: Test para un post
 author: Autor Prueba
-image: img/otros/default.jpg
+image: img/otros/default.webp
 tags: uno, dos, tres, cuatro, cinco
 ---
 
