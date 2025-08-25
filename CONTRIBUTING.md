@@ -8,12 +8,12 @@ Por favor sigue los siguientes puntos para contribuir con un nuevo post o para m
 
 # Tabla de contenido
 
-1. Primer Paso Fork de Proyecto
-2. Estructura del Proyecto
-3. Crear un Post
-4. Agregar Contenido de Post
-5. Ambiente de Desarrollo Local
-6. Pull Request Revisón
+1. [Primer Paso Fork de Proyecto](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#1--primer-paso-fork-de-proyecto)
+2. [Estructura del Proyecto](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#2--estructura-del-proyecto)
+3. [Crear un Post](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#3--crear-un-post)
+4. [Agregar Contenido de Post](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#4--agregar-contenido-de-post)
+5. [Ambiente de Desarrollo Local](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#5-%EF%B8%8F-ambiente-de-desarrollo-local)
+6. [Pull Request Revisón](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#6--pull-request-revis%C3%B3n)
 
 
 ---
