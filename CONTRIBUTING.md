@@ -97,7 +97,7 @@ Contenido del post comienza aquí...
 
 Descripción de metada:
 
-- **date**: fecha de la creación del post. Formato AAAA-dd-MM.
+- **date**: fecha de la creación del post. Formato AAAA-MM-DD.
 - **title**: Título del post.
 - **summary**: Breve resumen del post.
 - **author**: Nombre de quién creó el post.
@@ -181,6 +181,8 @@ El comando anterior ocupa la configuración que se encuentra en el archivo **pel
 para generar el sitio estático en la carpeta **output/**
 
 3. Prevista en local
+
+URL de sitio `http://localhost:800`
 
 ```bash
 pelican -l
