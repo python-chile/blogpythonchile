@@ -4,7 +4,7 @@ Gracias por tu interés en contribuir al blog de la comunidad Python Chile! 🚀
 
 El sitio está hecho con el framework [Pelican](https://getpelican.com/) y los post están escritos ocupando **Markdown**.
 
-Por favor sigue los siguientes puntos para contribuir con un nuevo post o para mejorar el sitio.
+Por favor seguir los siguientes puntos para contribuir con un nuevo post o para mejorar el sitio.
 
 # Tabla de contenido
 
@@ -45,7 +45,7 @@ git checkout -b mi-primer-post
 
 4. Agregar post
 
-Crea un archivo **Markdown** en `content/post/` y las imágenes a ocupar en `content/img/`.
+Crear archivo **Markdown** en `content/post/` y las imágenes a ocupar en `content/img/`.
 
 Para más información dirigirse a punto **3** para crear un post y punto **4** para conocer el formato del contenido. 
 
@@ -67,7 +67,7 @@ publishconf.py      # Configuración para ambiente de producción
 
 # 3. 📝 Crear un Post
 
-1. Crea un nuevo archivo **Markdown** en `content/post` con el formato `AAAA-MM-DD-titulo-mi-post.md`
+1. Crear un nuevo archivo **Markdown** en `content/post` con el formato `AAAA-MM-DD-titulo-mi-post.md`
 
 Ejemplo:
 
@@ -76,11 +76,11 @@ content/post/2025-08-25-hello-world.md
 ```
 
 >[!WARNING]
-> Favor de respetar formato fecha
+> Favor respetar formato fecha
 
-2. Agrega la metadata al principio del archivo
+2. Agregar la metadata al principio del archivo
 
-Sigue el siguiente formato
+Seguir siguiente formato
 
 ```bash
 ---
@@ -96,7 +96,7 @@ Contenido del post comienza aquí...
 ```
 
 >[!WARNING]
-> Toda la metadata es obligatoria como también el formato de esta.
+> Toda metadata es obligatoria como también el formato de esta.
 
 Descripción de metada:
 
@@ -108,9 +108,10 @@ Descripción de metada:
 - **tags**: Conceptos que representen tu post. Máximo 5 y en minúsculas.
 
 >[!NOTE]
-> Si no tienes una imagen para la prevista del post, puedes ocupar la imagen `img/otros/default.jpg`
+> Si no se tiene una imagen para la prevista del post, se puede ocupar la imagen `img/otros/default.jpg`
 
-Luego de crear la metadata y seguido de esta un **salto de línea**, ya puedes comenzar a escribir el contenido del post.
+La metadata debe estar seguida de un **salto de línea**. Una vez cumplido lo anterior 
+se puede comenzar a escribir el contenido del post.
 
 
 # 4. 🎨 Agregar Contenido de Post
@@ -134,8 +135,8 @@ Para mostrar código seguir el siguiente formato:
     texto ...
 ```
 
-El bloque de código debe situarse en la **columna 0**, es decir, no se le debe aplicar ni un tab.
-Al momento de crear el sitio estático, todo bloque de código estará situadio centrado horizontalmente
+El bloque de código debe situarse en la **columna 0**, es decir, no se le debe aplicar ningún tab.
+Al momento de crear el sitio estático, todo bloque de código estará centrado horizontalmente
 
 Es importante también agregar un espacio en blanco antes y después del bloque de código.
 
@@ -154,7 +155,7 @@ Ejemplo de imagen en un post:
 <img src="{static}/img/pyday/2025/copiapo/img1.webp" width="480" height="380" />
 ```
 
-Toda imagen que se ocupe en el post debe estar guarda en la ruta `content/img/<sub-carpeta>/<año>`. Si `<sub-carpeta>` y/o `<año>` no existe, se puede 
+Toda imagen que se ocupe en el post debe estar guardada en la ruta `content/img/<sub-carpeta>/<año>`. Si `<sub-carpeta>` y/o `<año>` no existe, se puede(n) 
 crear en el momento de la contribución del post.
 
 
@@ -195,13 +196,15 @@ pelican -l
 
 # 6. 🔄 Pull Request Revisón
 
-Cuando tengas tus cambios listos y pusheados en el fork creado anteriormente, debes abrir una pull request.
+Cuando los cambios estén listos y subidos en el fork creado anteriormente, se debe abrir una pull request.
 
-Considerar lo siguientes puntos para la revisión:
+Considerar los siguientes puntos para la revisión:
 
-- Tiempo es de **una semana** por motivos de disposición del equipo.
+- Respetar cada punto definido en la guía.
+- Tiempo de revisón es de **una semana** por motivos de disposición del equipo.
 - Considerar toda sugerencia que pueda aparecer en la revisión. 
 - La pull request se puede rechazar si no cumple con la normativa de la comunidad.
+- Procurar revisar checklist al momento de abrir PR (template PR).
 
 ---
 
@@ -212,7 +215,15 @@ Considerar lo siguientes puntos para la revisión:
 - Revisa cómo se muestra tu post en el sitio de forma local antes de la PR.
 
 
-# 💬 ¿Tienes Consultas?
+# 🤔 ¿Consultas?
 
 En caso de cualquier duda, consulta o cualquier inconveniente, puedes escribir a la comunidad de Python Chile en 
 el servidor oficial de Discord **Python Chile**.
+
+# 💬 Creación de Issue
+
+Si hay algo relacionado al proyecto, ya sea algún bug, documentación, diseño de sitio, post con contenido erróneo, flujo de trabajo, o cualquier 
+otra cosa que no sea respecto a crear un post, puedes crear un **issue** en el repositorio **blogpythonchile**, solo debes agregar la información necesaria para que 
+cualquier persona pueda entender el contexto como también el objetivo de la issue. Una vez definido bien el detalle, ya cualquier persona se puede asignar a esta y 
+comenzar a contribuir.
+
