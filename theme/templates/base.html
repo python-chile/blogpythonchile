@@ -40,48 +40,57 @@
               });
         });
 
-        document.addEventListener("DOMContentLoaded", () => {
-  const searchInput = document.getElementById("search-bar");
-  const resultsContainer = document.createElement("div");
-  resultsContainer.className = "search-results";
-  searchInput.parentNode.appendChild(resultsContainer);
+    document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.getElementById("search-bar");
+        const resultsContainer = document.createElement("div");
+        resultsContainer.className = "search-results";
+        searchInput.parentNode.appendChild(resultsContainer);
 
-  let articles = [];
+        let articles = [];
 
-  // Load JSON
-  fetch("{{ SITEURL }}/search.json")
-    .then(response => response.json())
-    .then(data => { articles = data; });
+        fetch("{{ SITEURL }}/search.json")
+            .then(response => response.json())
+            .then(data => { articles = data; });
 
-  // Search logic
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase().trim();
-    resultsContainer.innerHTML = "";
+        searchInput.addEventListener("input", () => {
 
-    if (!query) return;
+            const query = searchInput.value.toLowerCase().trim();
 
-    const words = query.split(/\s+/);
+            if (!query) return;
 
-    // ✅ At least one word must match title, summary, or tags
-    const matches = articles.filter(article =>
-      words.some(word =>
-        (article.title && article.title.toLowerCase().includes(word)) ||
-        (article.summary && article.summary.toLowerCase().includes(word)) ||
-        (article.tags && article.tags.join(" ").toLowerCase().includes(word))
-      )
-    );
+            const words = query.split(/\s+/);
 
-    if (matches.length === 0) {
-      resultsContainer.innerHTML = "<div>No results found</div>";
-    } else {
-      matches.forEach(article => {
-        const item = document.createElement("div");
-        item.className = "search-result";
-        item.innerHTML = `<a href="${article.url}">${article.title}</a>`;
-        resultsContainer.appendChild(item);
-      });
-    }
-  });
+            // Almenos una coincidencia con title, summary, tags
+            const matches = articles.filter(article =>
+            words.some(word =>
+            (article.title && article.title.toLowerCase().includes(word)) ||
+            (article.summary && article.summary.toLowerCase().includes(word)) ||
+            (article.tags && article.tags.join(" ").toLowerCase().includes(word))
+            ));
+
+            if (matches.length !== 0) {
+
+                const previewContainer = document.querySelector(".preview-container");
+                previewContainer.innerHTML = "";
+
+                matches.forEach(article => {
+                    const li = document.createElement("li");
+                    li.className = "preview-post";
+                    li.innerHTML = `
+                      <a class="preview-link" href="${article.url}">
+                        <img class="preview-img" src="${article.image || '{{ SITEURL }}/img/otros/default.webp'}" alt="">
+                        <div class="preview-title">${article.title}</div>
+                        <div class="preview-summary">${article.summary || ""}</div>
+                        <div class="preview-author">${article.date || ""} ${article.author ? "Por " + article.author : ""}</div>
+                        <div class="preview-tags-container">
+                          ${(article.tags || []).map(tag => `<div class="preview-tag">${tag}</div>`).join("")}
+                        </div>
+                      </a>
+                    `;
+                    previewContainer.appendChild(li);
+                });
+            }
+        });
 });
     </script>
 

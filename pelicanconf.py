@@ -44,3 +44,7 @@ MARKDOWN = {
     },
     "output_format": "html5",
 }
+
+TEMPLATE_PAGES = {
+    "search.json": "search.json",
+}

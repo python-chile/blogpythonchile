@@ -1,0 +1,12 @@
+[
+  {% for article in articles %}
+    {
+      "title": {{ article.title|tojson }},
+      "date": "{{ article.date }}",
+      "url": "{{ SITEURL }}/{{ article.url }}",
+      "summary": {{ article.summary|striptags|tojson }},
+      "image": "{{ SITEURL }}/{{ article.image }}",
+      "tags": [{% for tag in article.tags %}{{ tag.name|tojson }}{% if not loop.last %}, {% endif %}{% endfor %}]
+    }{% if not loop.last %},{% endif %}
+  {% endfor %}
+]
