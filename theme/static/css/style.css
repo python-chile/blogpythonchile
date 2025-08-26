@@ -169,7 +169,7 @@ body, html, root {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     font-size: 90%;
-    margin: 0.5rem auto;
+    margin: 0 auto;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -177,14 +177,27 @@ body, html, root {
     -webkit-box-orient: vertical;
 }
 
+.preview-date {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
 .preview-author {
     font-style: italic;
-    margin: 0.5rem auto;
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
     font-size: 90%;
 }
 
 /* Tags del Post */
 .preview-tags-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 1rem auto;
     display: flex;
     justify-content: center;
     gap: 5px;

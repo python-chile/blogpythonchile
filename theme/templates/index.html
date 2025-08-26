@@ -23,13 +23,14 @@
                     <img class="preview-img" src="{{ SITEURL }}/{{ article.image }}" alt="">
                     <div class="preview-title">{{ article.title }}</div>
                     <div class="preview-summary">{{ article.summary }}</div>
-                    <div class="preview-author">{{ article.date.strftime('%Y-%m-%d') }} Por {{ article.author }}</div>
-                    <div class="preview-tags-container">
-                        {% for tag in article.tags %}
-                            <div class="preview-tag"> {{ tag.name }} </div>
-                        {% endfor %}
-                    </div>
+                    <div class="preview-date">{{ article.date.strftime('%Y-%m-%d') }}</div>
+                    <div class="preview-author">Por {{ article.author }}</div>
                 </a>
+                <div class="preview-tags-container">
+                    {% for tag in article.tags %}
+                        <div class="preview-tag"> {{ tag.name }} </div>
+                    {% endfor %}
+                </div>
             </li>
         {% endfor %}
 </ul>
