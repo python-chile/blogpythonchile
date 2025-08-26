@@ -39,6 +39,50 @@
                   });
               });
         });
+
+        document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("search-bar");
+  const resultsContainer = document.createElement("div");
+  resultsContainer.className = "search-results";
+  searchInput.parentNode.appendChild(resultsContainer);
+
+  let articles = [];
+
+  // Load JSON
+  fetch("{{ SITEURL }}/search.json")
+    .then(response => response.json())
+    .then(data => { articles = data; });
+
+  // Search logic
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase().trim();
+    resultsContainer.innerHTML = "";
+
+    if (!query) return;
+
+    const words = query.split(/\s+/);
+
+    // ✅ At least one word must match title, summary, or tags
+    const matches = articles.filter(article =>
+      words.some(word =>
+        (article.title && article.title.toLowerCase().includes(word)) ||
+        (article.summary && article.summary.toLowerCase().includes(word)) ||
+        (article.tags && article.tags.join(" ").toLowerCase().includes(word))
+      )
+    );
+
+    if (matches.length === 0) {
+      resultsContainer.innerHTML = "<div>No results found</div>";
+    } else {
+      matches.forEach(article => {
+        const item = document.createElement("div");
+        item.className = "search-result";
+        item.innerHTML = `<a href="${article.url}">${article.title}</a>`;
+        resultsContainer.appendChild(item);
+      });
+    }
+  });
+});
     </script>
 
 </head>
