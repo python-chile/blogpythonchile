@@ -21,14 +21,14 @@
             <li class="preview-post">
                 <a class="preview-link" href="{{ SITEURL }}/{{ article.url }}">
                     <img class="preview-img" src="{{ SITEURL }}/{{ article.image }}" alt="">
-                    <div class="preview-title">{{ article.title }}</div>
-                    <div class="preview-summary">{{ article.summary }}</div>
-                    <div class="preview-date">{{ article.date.strftime('%Y-%m-%d') }}</div>
-                    <div class="preview-author">Por {{ article.author }}</div>
                 </a>
+                <div class="preview-title">{{ article.title }}</div>
+                <div class="preview-summary">{{ article.summary }}</div>
+                <div class="preview-date">🗓️ {{ article.date.strftime('%Y-%m-%d') }}</div>
+                <div class="preview-author">✏️ {{ article.author }}</div>
                 <div class="preview-tags-container">
                     {% for tag in article.tags %}
-                        <div class="preview-tag"> {{ tag.name }} </div>
+                        <a class="preview-tag" href="{{ SITEURL }}/tag/{{ tag.slug }}.html">{{ tag.name }}</a>
                     {% endfor %}
                 </div>
             </li>
@@ -39,7 +39,6 @@
     {% if articles_page.has_previous() %}
         <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">Previous</a>
     {% endif %}
-
     {% if articles_page.has_next() %}
         <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Next</a>
     {% endif %}

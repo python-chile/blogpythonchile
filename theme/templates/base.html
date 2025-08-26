@@ -79,13 +79,13 @@
                     li.innerHTML = `
                         <a class="preview-link" href="${article.url}">
                             <img class="preview-img" src="${article.image || '{{ SITEURL }}/img/otros/default.webp'}" alt="">
-                            <div class="preview-title">${article.title}</div>
-                            <div class="preview-summary">${article.summary || ""}</div>
-                            <div class="preview-date">${article.date || ""}</div>
-                            <div class="preview-author">${article.author ? "Por " + article.author : ""}</div>
                         </a>
+                        <div class="preview-title">${article.title}</div>
+                        <div class="preview-summary">${article.summary || ""}</div>
+                        <div class="preview-date">🗓️ ${article.date.split(' ')[0] || ""}</div>
+                        <div class="preview-author">✏️ ${article.author ? "Por " + article.author : ""}</div>
                         <div class="preview-tags-container">
-                            ${(article.tags || []).map(tag => `<div class="preview-tag">${tag}</div>`).join("")}
+                            ${(article.tags || []).map(tag => `<a class="preview-tag" href="{{ SITEURL }}/tag/${tag}.html">${tag}</a>`).join("")}
                         </div>
                     `;
                     previewContainer.appendChild(li);

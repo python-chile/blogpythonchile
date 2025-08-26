@@ -85,7 +85,7 @@ body, html, root {
 }
 
 .navbar-menu a:hover {
-    background-color: #000;
+    background-color: #E22914;
     color: #f8f1ee;
 }
 
@@ -178,16 +178,21 @@ body, html, root {
 }
 
 .preview-date {
+    font-style: italic;
     display: flex;
-    justify-content: end;
-    margin-right: 1rem;
+    position: absolute;
+    bottom: 16%;
+    justify-content: start;
+    margin-left: 1rem;
 }
 
 .preview-author {
     font-style: italic;
     display: flex;
-    justify-content: end;
-    margin-right: 1rem;
+    position: absolute;
+    bottom: 12%;
+    justify-content: start;
+    margin-left: 1rem;
     font-size: 90%;
 }
 
@@ -207,7 +212,15 @@ body, html, root {
     background-color: #f8f1ee;
     border-radius: 5px;
     padding: 2px;
-    border: 2px solid #000
+    border: 2px solid #000;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.preview-tag:hover {
+    background-color: #578FCA;
+    color: #f8f1ee;
 }
 
 /* Paginación */
@@ -229,6 +242,7 @@ body, html, root {
     position: relative;
     transition: all 0.2s ease-in-out;
     box-shadow: 0 0 0 #000;
+    color: black;
 }
 
 .pagination a:hover {
@@ -253,6 +267,11 @@ body, html, root {
 .post {
     margin: 1rem 10rem;
     padding: 1rem;
+}
+
+.post a {
+    text-decoration: none;
+    color: black;
 }
 
 /* imágenes que están en el contenido del post */

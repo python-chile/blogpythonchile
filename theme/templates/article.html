@@ -3,16 +3,17 @@
 
 {% block content %}
 <article class="post">
-  <div class="meta">Por {{ article.author }} — {{ article.date.strftime('%Y-%m-%d') }}</div>
-  <h2>{{ article.title }}</h2>
-  <h3>{{ article.summary }}</h3>
-  <div>Tags:
-    {% for tag in article.tags %}
-      <a href="{{ SITEURL }}/tag/{{ tag.slug }}.html">{{ tag.name }}</a>{% if not loop.last %}, {% endif %}
-    {% endfor %}
-  </div>
-  <div class="content">
+    <div>🗓️ {{ article.date.strftime('%Y-%m-%d') }}</div>
+    <div>✏️ {{ article.author }}</div>
+    <h2>{{ article.title }}</h2>
+    <h3>{{ article.summary }}</h3>
+    <div>Tags:
+        {% for tag in article.tags %}
+        <a href="{{ SITEURL }}/tag/{{ tag.slug }}.html">{{ tag.name }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </div>
+    <div class="content">
     {{ article.content }}
-  </div>
+    </div>
 </article>
 {% endblock %}
