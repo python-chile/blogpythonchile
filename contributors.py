@@ -1,4 +1,4 @@
-[
+CONTRIBUTORS = [
   {
     "id": 8,
     "username": "ocho",

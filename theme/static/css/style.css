@@ -8,7 +8,6 @@ body, html, root {
 }
 
 /* navbar */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -83,6 +82,7 @@ body, html, root {
     border-radius: 15px;
     border: 3px solid #000;
     background-color: #EF4444;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar-menu a:hover {
@@ -418,6 +418,32 @@ iframe {
     font-weight: bold;
 }
 
+/* contacto de la comunidad */
+.contact-container {
+    margin: 1rem auto;
+    padding-bottom: 30%;
+}
+
+.social-media-container {
+    justify-content: center;
+    display: flex;
+}
+
+.social-media-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media-list a {
+    color: #000000;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-media-list a:hover {
+    color: #E22914;
+}
 
 @media (max-width: 1300px) {
 
@@ -441,7 +467,7 @@ iframe {
 
     .navbar-menu a {
         display: block;
-        max-width: 100%;
+        max-width: 60%;
         text-align: center;
         font-size: 80%;
     }

@@ -216,7 +216,7 @@ Considerar los siguientes puntos para la revisión:
 Si es el primer aporte por favor considerar agregar algunos datos del perfil de github para poder mostrarlo junto al resto
 de contribuidores
 
-En archivo `content/extra/contributors.json` agregar los siguientes valores llave-valor siguiendo formato **json**:
+En archivo `contributors.py` agregar los siguientes valores llave-valor siguiendo formato **json**:
 
 - **id**: número positivo incremental (tipo **int**)
 - **username**: nombre usuario de github (tipo **string**)
@@ -240,7 +240,7 @@ Por ejemplo
 # 8. ✅ Buenas Prácticas
 
 - Texto con coherencia, buena ortografía y ordenada.
-- Usar ejemplos, códigos u diagramas para complementar.
+- Usar ejemplos, códigos o diagramas para complementar.
 - Revisa cómo se muestra tu post en el sitio de forma local antes de la PR.
 
 

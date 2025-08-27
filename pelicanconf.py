@@ -1,12 +1,16 @@
+import os
+import sys
+sys.path.append(os.path.dirname(__file__))
+
+from social_networks import SOCIAL_NETWORKS
+from contributors import CONTRIBUTORS
+
 SITENAME = 'Python Chile ¡El Blog!'
 SITEURL = ""
 PYTHON_CHILE_URL = "https://pythonchile.cl/"
 PATH = "content"
-
 TIMEZONE = 'America/Santiago'
-
 DEFAULT_LANG = 'es'
-
 THEME = "theme"
 
 
@@ -16,15 +20,16 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Variables para rutas
+# Variables custom para JINJA
 JINJA_GLOBALS = {
-    'img_path': '{static}/img'
+    'img_path': '{static}/img',
+    'social_networks': SOCIAL_NETWORKS,
+    'contributors': CONTRIBUTORS,
 }
 
 # Todos las carpetas con archivos estáticos dentro de content/
 STATIC_PATHS = [
     'img',
-    'extra/contributors.json'
 ]
 
 # Carpeta donde se alojan los archivos para crear post. Pelican por defecto tiene basepath content/
@@ -56,9 +61,4 @@ TEMPLATE_PAGES = {
     "search.json": "search.json",
     "contributors.html": "contributors.html",
     "contact.html": "contact.html",
-}
-
-# Map de paths archivos estáticos dentro de content/
-EXTRA_PATH_METADATA = {
-    "extra/contributors.json": {"path": "contributors.json"}
 }

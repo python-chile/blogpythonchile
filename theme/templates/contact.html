@@ -2,5 +2,25 @@
 {% block title %}Contacto — {{ SITENAME }}{% endblock %}
 
 {% block content %}
-<h1>Contactos</h1>
+<div class="main-msg">
+    <h1>Contáctanos 🤗</h1>
+    <div class="main-body-msg">
+        Si tienes cualquier duda respecto a la comunidad ¡nos alegrará poder ayudarte ✨¡
+
+        <div class="contact-container">
+
+            <div>✉️ contacto@pythonchile.cl</div>
+            <div class="social-media-container">
+                <ul class="social-media-list">
+                {% for social_network, data in social_networks.items() %}
+                    <li>
+                        <a href="{{ data['url'] }}"><i class="{{ data['icon'] }}"></i></a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
 {% endblock %}
