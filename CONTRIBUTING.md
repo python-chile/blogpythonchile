@@ -14,6 +14,10 @@ Por favor seguir los siguientes puntos para contribuir con un nuevo post o para 
 4. [Agregar Contenido de Post](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#4--agregar-contenido-de-post)
 5. [Ambiente de Desarrollo Local](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#5-%EF%B8%8F-ambiente-de-desarrollo-local)
 6. [Pull Request Revisón](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#6--pull-request-revis%C3%B3n)
+7. [¿Primera contribución al blog?](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#7-primera-contribuci%C3%B3n-al-blog)
+8. [Buenas Prácticas](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#8-buenas-pr%C3%A1cticas)
+9. [¿Consultas?](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#9-consultas)
+10. [Creación de Issue](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#10-creaci%C3%B3n-de-issue)
 
 
 ---
@@ -206,21 +210,47 @@ Considerar los siguientes puntos para la revisión:
 - La pull request se puede rechazar si no cumple con la normativa de la comunidad.
 - Procurar revisar checklist al momento de abrir PR (template PR).
 
----
 
-# ✅ Buenas Prácticas
+# 7. ⭐ ¿Primera contribución al blog?
+
+Si es el primer aporte por favor considerar agregar algunos datos del perfil de github para poder mostrarlo junto al resto
+de contribuidores
+
+En archivo `content/extra/contributors.json` agregar los siguientes valores llave-valor siguiendo formato **json**:
+
+- **id**: número positivo incremental (tipo **int**)
+- **username**: nombre usuario de github (tipo **string**)
+- **profileUrl**: URL de tu perfil de github. Ejemplo `https://github.com/<username>` (tipo **string**)
+- **avatarUrl**: URL de tu imagen de perfil de usuario. Puede ser desde `https://github.com/<username>.png` o `https://avatars.githubusercontent.com/u/<id>?v=4` (tipo **string**)
+
+Debes agregar los datos indicados al final de la lista de perfiles, respetando que campo **id** sea consecutivo respecto del último usuario ya incluido.
+
+Por ejemplo
+
+```bash
+{
+    "id": 3,
+    "username": "octocat",
+    "profileUrl": "https://github.com/octocat",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1234567?v=4"
+}
+```
+
+
+# 8. ✅ Buenas Prácticas
 
 - Texto con coherencia, buena ortografía y ordenada.
 - Usar ejemplos, códigos u diagramas para complementar.
 - Revisa cómo se muestra tu post en el sitio de forma local antes de la PR.
 
 
-# 🤔 ¿Consultas?
+# 9. 🤔 ¿Consultas?
 
 En caso de cualquier duda, consulta o cualquier inconveniente, puedes escribir a la comunidad de Python Chile en 
 el servidor oficial de Discord **Python Chile**.
 
-# 💬 Creación de Issue
+
+# 10. 💬 Creación de Issue
 
 Si hay algo relacionado al proyecto, ya sea algún bug, documentación, diseño de sitio, post con contenido erróneo, flujo de trabajo, o cualquier 
 otra cosa que no sea respecto a crear un post, puedes crear un **issue** en el repositorio **blogpythonchile**, solo debes agregar la información necesaria para que 
