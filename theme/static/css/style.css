@@ -92,7 +92,7 @@ body, html, root {
 
 /* Mensaje de bienvenida */
 
-.welcome-msg {
+.main-msg {
     text-align: center;
     align-items: center;
     margin: 3rem auto;
@@ -257,6 +257,9 @@ body, html, root {
 
 /* footer */
 .footer-container {
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #3674B5;
     padding: 1rem;
     border-top: 4px solid #000;
@@ -371,6 +374,50 @@ iframe {
     height: 35rem !important;
 }
 
+/* perfiles github contribuidores*/
+.contribution-text {
+    text-align: center;
+}
+
+.contributors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 30%;
+    margin: 2rem 0;
+}
+
+.contributor {
+    text-align: center;
+    width: 120px;
+}
+
+.contributor a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contributor-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 0 #000;
+}
+
+.contributor-avatar:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 0 #000;
+    z-index: 1;
+}
+
+.contributor-name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
 
 @media (max-width: 1300px) {
 
@@ -414,7 +461,7 @@ iframe {
         font-size: 1rem;
     }
 
-    .welcome-msg-body {
+    .main-body-msg {
         font-size: 0;
     }
 

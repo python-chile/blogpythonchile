@@ -21,16 +21,21 @@ JINJA_GLOBALS = {
     'img_path': '{static}/img'
 }
 
-STATIC_PATHS = ['img', 'css']
+# Todos las carpetas con archivos estáticos dentro de content/
+STATIC_PATHS = [
+    'img',
+    'extra/contributors.json'
+]
 
+# Carpeta donde se alojan los archivos para crear post. Pelican por defecto tiene basepath content/
 ARTICLE_PATHS = ['post']
 
-# Configuración para paginación
+# Configuración para paginación dentro de theme/
 DEFAULT_PAGINATION = 9
 INDEX_SAVE_AS = 'index.html'
 PAGINATED_DIRECT_TEMPLATES = ['index']
 
-# Configuración para resaltado de bloque de código
+# Configuración para resaltado de bloque de código dentro de archivos markdown
 MARKDOWN = {
     "extension_configs": {
         "markdown.extensions.fenced_code": {},
@@ -45,6 +50,15 @@ MARKDOWN = {
     "output_format": "html5",
 }
 
+# Archivos que debe considerar JINJA2/Pelican para crear sitio estático dentro de theme/templates
+# Los cuales no son los por defectos
 TEMPLATE_PAGES = {
     "search.json": "search.json",
+    "contributors.html": "contributors.html",
+    "contact.html": "contact.html",
+}
+
+# Map de paths archivos estáticos dentro de content/
+EXTRA_PATH_METADATA = {
+    "extra/contributors.json": {"path": "contributors.json"}
 }
