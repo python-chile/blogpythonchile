@@ -14,10 +14,10 @@ Por favor seguir los siguientes puntos para contribuir con un nuevo post o para 
 4. [Agregar Contenido de Post](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#4--agregar-contenido-de-post)
 5. [Ambiente de Desarrollo Local](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#5-%EF%B8%8F-ambiente-de-desarrollo-local)
 6. [Pull Request Revisón](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#6--pull-request-revis%C3%B3n)
-7. [¿Primera contribución al blog?](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#7-primera-contribuci%C3%B3n-al-blog)
-8. [Buenas Prácticas](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#8-buenas-pr%C3%A1cticas)
-9. [¿Consultas?](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#9-consultas)
-10. [Creación de Issue](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#10-creaci%C3%B3n-de-issue)
+7. [¿Primera contribución al blog?](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#7--primera-contribuci%C3%B3n-al-blog)
+8. [Buenas Prácticas](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#8--buenas-pr%C3%A1cticas)
+9. [¿Consultas?](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#9--consultas)
+10. [Creación de Issue](https://github.com/python-chile/blogpythonchile?tab=contributing-ov-file#10--creaci%C3%B3n-de-issue)
 
 
 ---
