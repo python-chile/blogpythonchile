@@ -43,8 +43,11 @@ git clone https://github.com/<user-github>/blogpythonchile.git
 
 ### 3. Crear una rama para post
 
+Nomenclatura debe ser `feature-<titulo>` donde `feature` indica que se agrega nuevo contenido (para correciones se ocupa prefijo `fix`) 
+y `<titulo>` indica el nombre del post, cuyo valor depende de quién contribuya.
+
 ```bash
-git checkout -b mi-primer-post
+git checkout -b feature-hello-world
 ```
 
 ### 4. Agregar post
@@ -71,7 +74,9 @@ publishconf.py      # Configuración para ambiente de producción
 
 # 3. 📝 Crear un Post
 
-### 1. Crear un nuevo archivo **Markdown** en `content/post` con el formato `AAAA-MM-DD-titulo-mi-post.md`
+### 1. Nuevo archivo
+
+Crear archivo **Markdown** (extensión `.md`) en ruta `content/post/` con el formato `AAAA-MM-DD-titulo-mi-post.md`.
 
 Ejemplo:
 
@@ -82,9 +87,11 @@ content/post/2025-08-25-hello-world.md
 >[!WARNING]
 > Favor respetar formato fecha
 
-### 2. Agregar la metadata al principio del archivo
+### 2. Agregar metadata
 
-Seguir siguiente formato
+Se debe agregar **metada** al inicio del archivo **Markdown** ya que esta se ocupan como variables para crear contenido.
+
+Seguir siguiente formato:
 
 ```bash
 ---
@@ -100,7 +107,7 @@ Contenido del post comienza aquí...
 ```
 
 >[!WARNING]
-> Toda metadata es obligatoria como también el formato de esta.
+> Toda metadata es obligatoria como también el formato y orden de esta.
 
 Descripción de metada:
 
@@ -122,7 +129,7 @@ se puede comenzar a escribir el contenido del post.
 
 ### 1. Texto
 
-Solamente usar formato de **Markdown**.
+Usar formato de **Markdown** para crear el cuerpo del post.
 
 ### 2. Bloque de código
 
@@ -139,7 +146,11 @@ Para mostrar código seguir el siguiente formato:
     texto ...
 ```
 
+>[!NOTE]
+> Por defecto todo bloque de código tiene botón de copiar código.
+
 El bloque de código debe situarse en la **columna 0**, es decir, no se le debe aplicar ningún tab.
+
 Al momento de crear el sitio estático, todo bloque de código estará centrado horizontalmente
 
 Es importante también agregar un espacio en blanco antes y después del bloque de código.
@@ -167,7 +178,7 @@ crear en el momento de la contribución del post.
 
 ### 1. Versión de Python
 
-Ocupar versión que sea igual o mayor a 3.11
+Ocupar versión que sea igual o mayor a versión 3.11
 
 ### 2. Instalación de dependencias
 
@@ -198,7 +209,7 @@ para generar el sitio estático en la carpeta **output/**
 
 ### 4. Prevista en local
 
-URL de sitio `http://localhost:800`
+URL de sitio `http://localhost:8000`
 
 ```bash
 pelican -l
@@ -221,7 +232,7 @@ Considerar los siguientes puntos para la revisión:
 # 7. ⭐ ¿Primera contribución al blog?
 
 Si es el primer aporte por favor considerar agregar algunos datos del perfil de github para poder mostrarlo junto al resto
-de contribuidores
+de contribuidores.
 
 En archivo `contributors.py` agregar los siguientes valores llave-valor siguiendo formato **json**:
 
