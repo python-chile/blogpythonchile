@@ -24,7 +24,7 @@ Por favor seguir los siguientes puntos para contribuir con un nuevo post o para 
 
 # 1. 🍴 Primer Paso Fork de Proyecto
 
-1. Crear un Fork
+### 1. Crear un Fork
 
 Dentro del proyecto, en el lado derecho a la altura del nombre de este, clickear **Fork** que debe estar entre los elementos **Watch** y **Star**.
 
@@ -33,7 +33,7 @@ Dentro del proyecto, en el lado derecho a la altura del nombre de este, clickear
 > Evita conflictos en el desarrollo por no sincronizar tu repo.
 
 
-2. Clonar proyecto
+### 2. Clonar proyecto
 
 Por ejemplo:
 
@@ -41,13 +41,13 @@ Por ejemplo:
 git clone https://github.com/<user-github>/blogpythonchile.git
 ```
 
-3. Crear una rama para post
+### 3. Crear una rama para post
 
 ```bash
 git checkout -b mi-primer-post
 ```
 
-4. Agregar post
+### 4. Agregar post
 
 Crear archivo **Markdown** en `content/post/` y las imágenes a ocupar en `content/img/`.
 
@@ -71,7 +71,7 @@ publishconf.py      # Configuración para ambiente de producción
 
 # 3. 📝 Crear un Post
 
-1. Crear un nuevo archivo **Markdown** en `content/post` con el formato `AAAA-MM-DD-titulo-mi-post.md`
+### 1. Crear un nuevo archivo **Markdown** en `content/post` con el formato `AAAA-MM-DD-titulo-mi-post.md`
 
 Ejemplo:
 
@@ -82,7 +82,7 @@ content/post/2025-08-25-hello-world.md
 >[!WARNING]
 > Favor respetar formato fecha
 
-2. Agregar la metadata al principio del archivo
+### 2. Agregar la metadata al principio del archivo
 
 Seguir siguiente formato
 
@@ -120,11 +120,11 @@ se puede comenzar a escribir el contenido del post.
 
 # 4. 🎨 Agregar Contenido de Post
 
-1. Texto
+### 1. Texto
 
 Solamente usar formato de **Markdown**.
 
-2. Bloque de código
+### 2. Bloque de código
 
 Para mostrar código seguir el siguiente formato:
 
@@ -146,9 +146,9 @@ Es importante también agregar un espacio en blanco antes y después del bloque 
 
 El lenguaje que se utiliza en el bóque de código se debe definir al principio de este, como en el ejemplo que se ocupa **python** en **```python**.
 
-3. Imágenes
+### 3. Imágenes
 
-Debe ser tipo **webpg** toda imagen ocupada en el contenido.
+Toda imagen guardada en el proyecto y ocupada en un post, debe ser tipo **webpg**.
 
 No hay un estandar actualmente de cómo integrar imágenes en un post, se puede agregar el estilo y 
 dimensiones que se quiera. Queda a gusto personal este punto.
@@ -156,25 +156,32 @@ dimensiones que se quiera. Queda a gusto personal este punto.
 Ejemplo de imagen en un post:
 
 ```bash
-<img src="{static}/img/pyday/2025/copiapo/img1.webp" width="480" height="380" />
+<img src="{static}/img/mi-post/mi-post.webp" width="480" height="380" />
 ```
 
-Toda imagen que se ocupe en el post debe estar guardada en la ruta `content/img/<sub-carpeta>/<año>`. Si `<sub-carpeta>` y/o `<año>` no existe, se puede(n) 
+Toda imagen que se ocupe en el post debe estar guardada en la ruta `content/img/<sub-carpeta>/`. Donde `<sub-carpeta>` debe tener el mismo nombre que el post a publicar. Esta se 
 crear en el momento de la contribución del post.
 
 
 # 5. ⚙️ Ambiente de Desarrollo Local
 
-1. Instalación de dependencias
+### 1. Versión de Python
+
+Ocupar versión que sea igual o mayor a 3.11
+
+### 2. Instalación de dependencias
 
 >[!NOTE]
-> Se recomienda ocupar un entorno virtual de python. Por ejemplo [virtualenv](https://virtualenv.pypa.io/en/latest/).
+> 
+> **Importante**
+> 
+> Para el manejo de dependencias se recomienda ocupar un entorno virtual de python. Por ejemplo [virtualenv](https://virtualenv.pypa.io/en/latest/).
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Build de Proyecto
+### 3. Build de Proyecto
 
 ```bash
 pelican content
@@ -189,7 +196,7 @@ pelican content -s pelicanconf.py -o output
 El comando anterior ocupa la configuración que se encuentra en el archivo **pelicanconf.py** 
 para generar el sitio estático en la carpeta **output/**
 
-3. Prevista en local
+### 4. Prevista en local
 
 URL de sitio `http://localhost:800`
 
@@ -205,7 +212,7 @@ Cuando los cambios estén listos y subidos en el fork creado anteriormente, se d
 Considerar los siguientes puntos para la revisión:
 
 - Respetar cada punto definido en la guía.
-- Tiempo de revisón es de **una semana** por motivos de disposición del equipo.
+- Tiempo de revisón es de **5 días** por motivos de disposición del equipo.
 - Considerar toda sugerencia que pueda aparecer en la revisión. 
 - La pull request se puede rechazar si no cumple con la normativa de la comunidad.
 - Procurar revisar checklist al momento de abrir PR (template PR).
