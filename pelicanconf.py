@@ -51,6 +51,7 @@ MARKDOWN = {
         },
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
+        'markdown.extensions.admonition': {}
     },
     "output_format": "html5",
 }

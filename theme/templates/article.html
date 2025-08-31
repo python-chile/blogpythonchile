@@ -5,13 +5,15 @@
 <article class="post">
     <div>🗓️ {{ article.date.strftime('%Y-%m-%d') }}</div>
     <div>✏️ {{ article.author }}</div>
-    <h2>{{ article.title }}</h2>
-    <h3>{{ article.summary }}</h3>
+    <br>
     <div>Tags:
         {% for tag in article.tags %}
         <a href="{{ SITEURL }}/tag/{{ tag.slug }}.html">{{ tag.name }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
     </div>
+    <hr />
+    <h1 class="post-title">{{ article.title }}</h1>
+    <h2 class="post-summary">{{ article.summary }}</h2>
     <div class="content">
     {{ article.content }}
     </div>

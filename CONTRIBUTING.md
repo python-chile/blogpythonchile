@@ -119,7 +119,7 @@ Descripción de metada:
 - **tags**: Conceptos que representen tu post. Máximo 5 y en minúsculas.
 
 >[!NOTE]
-> Si no se tiene una imagen para la prevista del post, se puede ocupar la imagen `img/otros/default.jpg`
+> Si no se tiene una imagen para la prevista del post, se puede ocupar la imagen `img/otros/default.webp`
 
 La metadata debe estar seguida de un **salto de línea**. Una vez cumplido lo anterior 
 se puede comenzar a escribir el contenido del post.
@@ -161,14 +161,32 @@ El lenguaje que se utiliza en el bóque de código se debe definir al principio 
 
 Toda imagen guardada en el proyecto y ocupada en un post, debe ser tipo **webpg**.
 
-No hay un estandar actualmente de cómo integrar imágenes en un post, se puede agregar el estilo y 
-dimensiones que se quiera. Queda a gusto personal este punto.
+No hay un estandar actualmente de cómo integrar imágenes en un post, se puede agregar el **estilo** y 
+**dimensiones** que se quiera. Queda a gusto personal este punto.
 
-Ejemplo de imagen en un post:
+Para agregar una imagen se ocupa:
+
+```
+# Ocupando variable static
+![<nombre-imagen>.webp]({static}/img/<nombre-post>/<nombre-imagen>.webp)
+
+# Ocupando path relativa
+![<nombre-imagen>.webp](../img/<nombre-post>/<nombre-imagen>.webp)
+```
+
+Ejemplo :
 
 ```bash
-<img src="{static}/img/mi-post/mi-post.webp" width="480" height="380" />
+![hello-world.webp]({static}/img/hello-world/hello-world.webp)
 ```
+
+Por defecto las imágenes no están centradas, si se quiere centrar se puede agregar la siguiente clase css `.post-img` de la siguiente forma:
+
+```bash
+![hello-world.webp]({static}/img/hello-world/hello-world.webp){: .post-img}
+```
+
+Ocupando la clase css del ejemplo anterior, la imagen se centra horizontalmente.
 
 Toda imagen que se ocupe en el post debe estar guardada en la ruta `content/img/<sub-carpeta>/`. Donde `<sub-carpeta>` debe tener el mismo nombre que el post a publicar. Esta se 
 crear en el momento de la contribución del post.
