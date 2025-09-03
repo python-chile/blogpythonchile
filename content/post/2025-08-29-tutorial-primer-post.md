@@ -30,7 +30,7 @@ Luego debes agregar al inicio del archivo la metadata:
 
 ![metadata.webp]({static}/img/tutorial-primer-post/metadata.webp){: .post-img}
 
-Esta metadata es escencial para poder crear los **preview** de los post al inicio del blog.
+Esta metadata es esencial para poder crear los **preview** de los post al inicio del blog.
 
 Se debe respetar los caracteres `---` tanto al inicio como al final de la metadata y separando la metadata del contenido del post
 con un **salto de línea**:
