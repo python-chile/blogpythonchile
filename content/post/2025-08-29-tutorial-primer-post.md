@@ -30,7 +30,7 @@ Luego debes agregar al inicio del archivo la metadata:
 
 ![metadata.webp]({static}/img/tutorial-primer-post/metadata.webp){: .post-img}
 
-Esta metadata es escencial para poder crear los **preview** de los post al inicio del blog.
+Esta metadata es esencial para poder crear los **preview** de los post al inicio del blog.
 
 Se debe respetar los caracteres `---` tanto al inicio como al final de la metadata y separando la metadata del contenido del post
 con un **salto de línea**:
@@ -44,11 +44,10 @@ Una vez listo con la metada puedes **agregar tu contenido** ocupando formato __m
 Dentro de tu contenido se puede agregar texto con el formato que se quiera, imágenes, código o cualquier otro elemento.
 
 **Importante**: Todo contenido con estilo **personalizado** es permitido siempre y cuando no interfiera con el estilo global del blog. 
-En este post no se cubre cómo peronsalizar el sitio entero.
 
 <br >
 
-Para agregar alguna imágen se hace con el formato `![<nombre-img>.webp](<ruta hacia imagen>.md)`:
+Para agregar alguna imágen se hace con el formato `![<nombre-img>.webp](<ruta hacia imagen>.webp)`:
 
 ![ruta-imagen.webp]({static}/img/tutorial-primer-post/ruta-imagen.webp){: .post-img}
 
@@ -60,11 +59,11 @@ Toda imagen agregada al proyecto se debe guardar en la ruta `content/img/<nombre
 
 ![carpeta-img-post.webp](../img/tutorial-primer-post/carpeta-img-post.webp){: .post-img}
 
-Si quieres agregar una imagen ocupando una URL es el mismo formato mostrado anteriormente `![<nombre imagen>](<URL de imagen>)`
+Si quieres agregar una imagen ocupando una URL, se debe usar el mismo formato mostrado anteriormente `![<nombre imagen>](<URL de imagen>)`
 
 <br >
 
-También puedes agregar código que se pueda copiar:
+También puedes agregar código que se puede copiar:
 
     ```<nombre lenguaje>
     código de ejemplo aquí
@@ -100,7 +99,7 @@ Para ocupar info panels como `warning` o `note`:
 Puedes agregar un título también:
 
 ```
-!!! note "🪐 Titulo ejemplo" 
+!!! warning "🪐 Titulo ejemplo" 
     Este es un info panel con título tipo **note**
 ```
 
